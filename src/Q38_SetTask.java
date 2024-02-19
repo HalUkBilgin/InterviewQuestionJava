@@ -16,33 +16,8 @@ public class Q38_SetTask {
     // Set<Character> ve char değişkenlerini parametre olarak alan bir yöntem oluşturun
     // ve tüm karakterleri sete ekleyin
     public static void main(String[] args) {
-        ArrayList<Integer> arrList = new ArrayList<>();
-        arrList.add(10);
-        arrList.add(20);
-        arrList.add(30);
-        arrList.add(10);
-        arrList.add(20);
-        arrList.add(50);
-        Set<Integer> integerSet=new HashSet<>();
-        listiSeteAta(arrList,integerSet);
-        System.out.println("Listin elemanlarii aldiktan sonra set : "+integerSet);
 
-        //bolum 2
-        Set<Character> characterSet=new TreeSet<>();
-        karakterleriSetYap(characterSet,'A','B','a','R','q','r');
-        System.out.println("Char elemanlari aldiktan sonra set: "+characterSet);
-    }
 
-    private static void karakterleriSetYap(Set<Character> characterSet, Character... chars) {
-        for (int i = 0; i < chars.length; i++) {
-            characterSet.add(chars[i]);
-        }
-    }
-
-    private static void listiSeteAta(ArrayList<Integer> arrList, Set<Integer> integerSet) {
-        for (Integer w:arrList) {
-            integerSet.add(w);
-        }
     }
 }
 

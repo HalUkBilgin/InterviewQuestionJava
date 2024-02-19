@@ -10,19 +10,7 @@ public class Q47_PrintMap {
     // Nar 250
 
     public static void main(String[] args) {
-        Map<String, Integer> map = new LinkedHashMap<>(); //sirali olarak yazdirir
-        map.put("Kiraz", 100);
-        map.put("Incir", 200);
-        map.put("Enginar", 150);
-        map.put("Üzüm", 145);
-        map.put("Nar", 250);
 
-        System.out.println("map = " + map); //map = {Kiraz=100, Incir=200, Enginar=150, Üzüm=145, Nar=250}
-
-        for (Map.Entry<String, Integer> entryYeni : map.entrySet()) {
-
-            System.out.println(entryYeni.getKey() + " " + entryYeni.getValue());
-        }
     }
 
 }

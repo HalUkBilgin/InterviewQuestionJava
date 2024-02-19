@@ -22,24 +22,6 @@ public class Q33_ListCollectionsMethodsTask {
 
 
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        List<Integer> list=new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            System.out.println((i+1)+".elemeni giriniz");
-            list.add(scan.nextInt());
-        }
-        System.out.println("ilk giriste"+list);
-        Collections.reverse(list);
-        System.out.println("Tersten siralanmis : "+list);
-        Collections.shuffle(list);
-        System.out.println("Karistirilmis : "+list);
-        Collections.rotate(list,3);
-        System.out.println("3 br kaymis : "+list);
-        int maxEleman=Collections.max(list);
-        int minEleman=Collections.min(list);
-        System.out.println("maxEleman = " + maxEleman);
-        System.out.println("minEleman = " + minEleman);
-        Collections.replaceAll(list,maxEleman,minEleman);
-        System.out.println("Max min yer degismis list : "+list);
+
     }
 }

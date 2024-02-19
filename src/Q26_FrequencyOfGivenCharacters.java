@@ -10,8 +10,7 @@ public class Q26_FrequencyOfGivenCharacters {
 
 
     public static void main(String[] args) {
-       // String str = "AAABBCDD";
-        String str = "ey edip adanada pide ye";
+
 
 
 

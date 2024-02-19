@@ -13,26 +13,8 @@ public class Q09_ArmstrongNumber_4Digits {
           gösteren program yazınız*/
 
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Bir sayi giriniz");
-        String sayi= scan.next();
-        System.out.println(armstrongKontrol(sayi));
-        girilensayitaKadar(sayi);
+
 
     }//main sonu
 
-    private static void girilensayitaKadar(String sayi) {
-        for (int i = 1; i < Integer.parseInt(sayi); i++) {
-            System.out.println(armstrongKontrol(String.valueOf(i)));
-        }
-    }
-
-    private static String armstrongKontrol(String sayi) {
-        int sayiKupuToplam=0;
-        String[] rakam=sayi.split("");
-        for (String w:rakam) {
-            sayiKupuToplam+= (int) Math.pow(Double.parseDouble(w),rakam.length);
-        }
-        return sayiKupuToplam==Integer.parseInt(sayi)?"girilen sayi "+sayi+" armstrog'dur":"girilen sayi "+sayi+" armstrog degildir";
-    }
-}
+}//Class sonu

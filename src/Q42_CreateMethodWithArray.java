@@ -27,38 +27,6 @@ public class Q42_CreateMethodWithArray {
           -3-Bir arrayın maksimum elemanını yazdıran bir method oluşturun P.S: return tipi void olmalıdır çünkü sadece yazdırılan herhangi bir şeyi iade etmiyoruz
             */
     public static void main(String[] args) {
-        int[] arr=new  int[5];
-        Random rnd=new Random();
-        for (int i = 0; i < arr.length; i++) {
-            arr[i]= rnd.nextInt(10);
-        }
-        System.out.println("Array: "+ Arrays.toString(arr));
-        printArr(arr);
-        toplamArr(arr);
-        maxArr(arr);
 
-    }
-
-    private static void maxArr(int[] arr) {
-        int max=arr[0];
-        for (int w:arr) {
-            max=Math.max(max,w);
-        }
-        System.out.println("max = " + max);
-    }
-
-    private static void toplamArr(int[] arr) {
-        int toplam=0;
-        for (int i = 0; i < arr.length; i++) {
-            toplam+=arr[i];
-        }
-        System.out.println("toplam = " + toplam);
-    }
-
-    private static void printArr(int[] arr) {
-        for (int w:arr) {
-            System.out.print(w+" ");
-        }
-        System.out.println();
     }
 }

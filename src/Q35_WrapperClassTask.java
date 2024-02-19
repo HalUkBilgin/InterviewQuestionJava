@@ -9,18 +9,10 @@ public class Q35_WrapperClassTask {
       */
 
     public static void main(String[] args) {
-        int sayi=1453;
-        System.out.println(tljMethod(sayi));
-        Integer yas=38;
-        System.out.println(tljMethod(yas));
+
 
     }
 
-    private static int tljMethod(int sayi) {
-        return sayi*2;
-    }
-    private static int tljMethod(Integer sayi) {
-        return sayi*2;
-    }
+
 }//Class sonu
 

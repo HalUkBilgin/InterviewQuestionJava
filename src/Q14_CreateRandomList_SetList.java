@@ -10,25 +10,9 @@ public class Q14_CreateRandomList_SetList {
 
 
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        randomEkle(list);
+
 
     }//main sonu
 
-    private static void randomEkle(ArrayList<Integer> list) {
-        int ciftadet=0;
-        for (int i = 0; i < 10; i++) {
-            int rastgeleSayi= (int) (Math.random()*20);
-            if (rastgeleSayi%2==0){
-                list.add(111);
-                ciftadet++;
-            }else {
-                list.add(rastgeleSayi);
-            }
-        }
-        System.out.println(list);
-        if (ciftadet==0){
-            System.out.println("Cift sayi yoktur");
-        }else System.out.println(ciftadet);
-    }
+
 }//Class sonu
