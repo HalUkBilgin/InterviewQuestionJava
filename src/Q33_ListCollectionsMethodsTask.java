@@ -22,6 +22,40 @@ public class Q33_ListCollectionsMethodsTask {
 
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // part 1
+
+        ArrayList<Integer> sayiList = new ArrayList<>();
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print((i + 1) + ". sayı   giriniz : ");
+            sayiList.add(input.nextInt());
+
+        }
+        System.out.println("sayiList insertion order hali " + sayiList);//
+
+        Collections.reverse(sayiList);//sayiList elemanları ters sıralandı
+        System.out.println("sayiList eleman ters sıra = " + sayiList);
+        Collections.shuffle(sayiList);//sayiList elemanları randon karıstırldı
+        System.out.println("sayiList eleman karıstırılmıs hali = " + sayiList);//
+        Collections.rotate(sayiList, 3);
+        System.out.println("sayiList 3 birim ötelenmiş hali = " + sayiList);
+        // part 2
+        // int maxSayi=sayiList.get(0); -> amele codeee  :(
+        // for (int i = 0; i < 5; i++) {
+        //     if (sayiList.get(i)>maxSayi){
+        //         maxSayi=sayiList.get(i);
+        //     }
+        // }
+        //System.out.println("maxSayi = " + maxSayi);//
+        System.out.println("Collections.max(sayiList) = " + Collections.max(sayiList));//24
+        System.out.println("Collections.min(sayiList) = " + Collections.min(sayiList));//04
+        int maxSayi = Collections.max(sayiList);
+        int minSayi = Collections.min(sayiList);
+        Collections.replaceAll(sayiList, maxSayi, minSayi);
+        System.out.println(Collections.replaceAll(sayiList, maxSayi, minSayi));// false
+        System.out.println("sayiList max min replaceAll sonrası = " + sayiList);//
+
 
     }
 }

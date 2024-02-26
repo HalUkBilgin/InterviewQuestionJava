@@ -20,8 +20,23 @@ public class Q17_SpecialCharRemoveArray {
     */
 
     public static void main(String[] args) {
+        ArrayList<String> moneyList1 = new ArrayList<>(Arrays.asList("$13", "$15", "$20"));
+        ArrayList<String> moneyList2 = new ArrayList<>(Arrays.asList("$13", "$-67", "$20"));
+        System.out.println("getSum(moneyList1) = " + getSum(moneyList1));//48
+        System.out.println("getSum(moneyList2) = " + getSum(moneyList2));//-1
 
     }//main sonu
+
+    private static int getSum(ArrayList<String> para) {
+
+        int toplam = 0;
+        for (String avuc:para  ) {
+            toplam+=Integer.parseInt(avuc.replace("$",""));
+        }
+        if (toplam < 0) {
+            return -1;
+        } else return toplam;
+    }
 
 
 }//Class sonu

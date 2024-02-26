@@ -5,7 +5,30 @@ public class Q01_AlphaCharactersCount {
         // Task-> Find out how many alpha characters present in a string?
         // "heKL75jki8#"; ifdesindeki harf sayısını print eden code create ediniz.
 
+        //amele code
+
+        int count = 0;
+
+        // String str="heKL75jki8#";
+
+        // for (int i = 0; i <str.length() ; i++) {//heKL75jki8#
+        for (int i = 0; i < "heKL75jki8#".length(); i++) {//heKL75jki8#
+            //char ch=str.charAt(i);
+            //if (Character.isLetter(ch)){
+            if (Character.isLetter("heKL75jki8#".charAt(i))) {
+                count++;
+            }
+        }
+        System.out.println("count = " + count);
+        //cincix code
+
+        System.out.println("heKL75jki8#".replaceAll("[^a-zA-Z]", "").length());//7
+
+
 /*
+
+
+
 
 
     Regular Expression
